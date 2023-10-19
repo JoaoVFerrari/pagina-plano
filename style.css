@@ -1,0 +1,135 @@
+body {
+    background-color: #0c1014;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.header {
+    display: flex;
+    background-color: #05080a;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+
+}
+
+.header__logo {
+    letter-spacing: 2px;
+    margin-left: 16px;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+
+
+.header__nav ul {
+    gap: 16px;
+    display: flex;
+    list-style-type: none;
+    font-size: 18px;
+
+}
+
+.header__nav a {
+    color: #fff;
+    border-radius: 6px;
+    padding: 14px;
+    text-decoration: none;
+    padding: 14px;
+
+}
+
+.header__nav a:hover {
+    text-decoration: underline;
+}
+
+/*o a. esta vindo antes para fazer a especidade, como ele veio depoiss*/
+
+a.header__nav--active {
+    color: black;
+    border-radius: 2px;
+    background-color: #cbe300;
+    pointer-events: none;
+    /*cursor: default;*/
+}
+/* cursor serve para mudarmos o cursosr na web*/
+/* o pointer events faz com que nao dispare o evento*/
+
+.main-title {
+    margin: 46px 0;
+    text-align: center;
+    font-size: 67px;
+    text-transform: uppercase;
+
+}
+
+.priccing {
+    display: flex;
+    
+    gap: 16px;
+    
+}
+
+.priccing-plan {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+   
+    padding: 30px;
+    background-color: #1f262c;
+    border-radius: 6px;
+    box-shadow: 0 5px 12px -2px #cbe300;
+    margin-bottom: 100px;
+}
+
+.plan__title {
+    
+    padding-bottom: 10px ;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom:2px solid #cbe300;
+    margin-top: 0px;
+
+}
+.priccing-plan p{
+    margin-top: 0;
+}
+
+.priccing-plan__price {
+    font-size: 34px;
+
+}
+
+.princing-plan__features {
+    color: #b5b5b5;
+    margin: 0 0 35px 0;
+    padding-left: 16px ;
+    line-height: 1.8;
+    flex-grow: 1;
+    
+}
+.princing-plan__features li::marker{
+    color: #cbe300;
+}
+
+.priccing-plan__sign {
+    text-decoration: none;
+    padding: 16px;
+    font-size: 16px;
+    background-color: #cbe300;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+}
+.priccing-plan__sign:hover{
+    outline: 2px solid #cbe300;
+    background-color: transparent;
+    color: #fff;
+}
+
